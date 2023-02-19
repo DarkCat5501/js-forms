@@ -1,0 +1,86 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: black;
+	color:white;
+	width:100vw;
+	height:100vh;
+	padding: 0;
+	margin: 0;
+	overflow: scroll;
+}
+
+
+form > fieldset {
+	display:flex;
+	flex-direction: column;
+	margin: 1rem;
+	padding-inline: 0.5rem;
+	padding-block: 1rem;
+	border-radius: 1rem;
+}
+
+.input-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.input {
+	display: block;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	width:auto;
+	color: white;
+	border-radius:1px;
+	padding: 0.5rem;
+}
+
+.input::placeholder {
+	color: gray;
+}
+
+.input:hover, .input:focus {
+	outline:none;
+}
+.input:focus {
+	border-inline: 2px solid white;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.btn {
+	text-decoration: none;
+	border: 2px solid white;
+	text-align: center;
+	color: white;
+	margin-block:1rem;
+	margin-inline:auto;
+	padding-inline:1rem;
+	padding-block: 0.2rem;
+	border-radius: 0.5rem;
+}
+
+.btn-list {
+	display: flex;
+	flex-direction: row;
+}
+
+.hide {
+	display: none;
+}

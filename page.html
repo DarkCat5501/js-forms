@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário | GN</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/script/index.js" defer></script>
+</head>
+
+<body>
+  <div class="box">
+    <form id ="form1" onsubmit="console.log('hello fucker')" action="https://formsubmit.co/envolvedstaff@gmail.com" method="POST">
+      <fieldset class="page">
+        <legend><b>Fórmulário Staff - EVR</b></legend><br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required>
+          <label for="nome" class="labelInput">Nome completo</label>
+        </div><br><br>
+        <div class="inputBox">
+          <input type="email" name="email" id="email" class="inputUser" required>
+          <label for="email" class="labelInput">Email</label>
+        </div><br><br>
+        <div class="inputBox">
+          <input type="dc" name="discord" id="discord" class="inputUser" required>
+          <label for="discord" class="labelInput">Nick no discord (Ex: zFerreira#0061)</label>
+        </div>
+        <p><strong>Sexo:</strong></p>
+        <input type="radio" id="feminino" name="genero" value="feminino" required>
+        <label for="feminino">Feminino</label>
+        <br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" id="outro" name="genero" value="outro" required>
+        <label for="outro">Outro</label>
+        <br><br>
+        <div class="inputBox" radioGroup>
+          <p><strong>Escolha seu melhor horário</strong></p>
+          <input type="radio" name="time" value="manha">
+          <label for="manha">Manhã</label>
+          <br>
+          <input type="radio" name="time" value="tarde">
+          <label for="tarde">Tarde</label>
+          <br>
+          <input type="radio" name="time" value="noite">
+          <label for="noie">Noite</label>
+        </div>
+        <br><br>
+        <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+        <input type="date" name="data_nascimento" id="data_nascimento" required>
+        <br><br><br>
+        <div class="inputBox">
+          <textarea name="aboutYou" id="aboutYou" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="aboutYou" class="labelInput"><strong>Conte um pouco sobre você.</strong></label>
+        </div>
+        <br> <br>
+        <div class="inputBox">
+          <textarea name="staff" id="staff" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="staff" class="labelInput"><strong>Por que deseja entrar na staff?</strong></label>
+        </div>
+        <br><br>
+        <a id="next" class="btn">Próxima</a>
+      </fieldset>
+      <fieldset class="page">
+        <div class="inputBox">
+          <p><strong>Possui microfone?</strong></p>
+          <input type="radio" name="microfone" value="sim" required>
+          <label for="feminino">Sim</label>
+          <input type="radio" name="microfone" value="nao" required>
+          <label for="feminino">Não</label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="JaFoiStaff" id="JaFoiStaff" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="JaFoiStaff" class="labelInput"><strong>Já foi Staff em outros servidores? Se sim,
+              quais?</strong></label>
+        </div><br><br>
+        <div class="inputBox">
+          <textarea name="ic" id="ic" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="ic" class="labelInput"><strong>Qual Significado da Sigla (IC)? Explique sobre ela com suas
+              palavras</strong></label>
+        </div><br><br>
+        <div class="inputBox">
+          <textarea name="occ" id="occ" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="occ" class="labelInput"><strong>Qual Significado da Sigla (OCC)? Explique sobre ela com suas
+              palavras.</strong></label>
+        </div><br><br>
+        <div class="inputBox">
+          <textarea name="vdm" id="vdm" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="vdm" class="labelInput"><strong>O que é (VEHICLE DEATH-MATCH)? Explique com suas
+              palavras?</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="carJacked" id="carJacked" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="carJacked" class="labelInput"><strong>O que é (CAR-JACKED)? Explique com suas
+              palavras.</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="rk" id="rk" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="rk" class="labelInput"><strong>O que é (REVANGE-KILL)? Explique com suas
+              palavras.</strong></label>
+        </div><br><br>
+        <div class="inputBox">
+          <textarea name="mg" id="mg" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="mg" class="labelInput"><strong>O que é (META-GAMING)? Explique com suas palavras.</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="pg" id="pg" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="pg" class="labelInput"><strong>O que é (POWER-GAMING)? Explique com suas
+              palavras.</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="copbait" id="copbait" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="copbait" class="labelInput"><strong>O que é (COP-BAIT) Explique com suas
+              palavras.</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="cl" id="cl" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="cl" class="labelInput"><strong>o que é (COMBAT-LOG)? Explique com suas palavras.</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="cj" id="cj" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="cj" class="labelInput"><strong>O que é (CAR-JACKED)? Explique com suas palavras.</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="quest1" id="quest1" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="quest1" class="labelInput"><strong>De acordo com a tabela de regras criminosas, é liberado reagir
+              a uma abordagem com o individuo já Rendido?</strong></label>
+        </div><br>
+        <div class="inputBox">
+          <textarea name="quest1" id="quest1" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="quest1" class="labelInput"><strong>Quando é proibido continuar uma Fuga? Cite 3 maneiras que não
+              poderia continuar.</strong></label>
+        </div>
+        <a id="next" class="btn">Próxima</a>
+      </fieldset>
+      <fieldset class="page">
+        <div class="inputBox" radioGroup>
+            <p><strong>Você está sendo assaltado/abordado por 2 criminosos/policiais armados, porém você também está
+                armado. O que você deve fazer?</strong></p>
+            <input type="radio" name="question1" value="1" required>
+            <label for="error">Esperaria eles vacilarem e reagiria com minha arma.</label>
+            <br>
+            <input type="radio" name="question1" value="2" required>
+            <label for="feminino">Apenas colaboraria com a ação e evitaria morrer.</label>
+            <br>
+            <input type="radio" name="question1" value="3" required>
+            <label for="feminino">Sairia correndo para tentar me livrar.</label>
+        </div>
+        <br><br>
+        <div class="inputBox" radioGroup>
+          <p><strong>Você está dando fuga e seu carro capota, o que você deve fazer?</strong></p>
+          <input type="radio" name="resposta" value="1">
+          <label for="feminino">Descer do carro e me render pois perdi a ação.</label>
+          <br>
+          <input type="radio" name="resposta" value="2">
+          <label for="feminino">Iria continuar a fuga como se nada tivesse acontecido..</label>
+          <br>
+        </div>
+        <div class="inputBox" radioGroup>
+          <p><strong>Você está dando fuga da PM, é permitido fugir para dentro da sua favela/base?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Sim.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Não.</label>
+          <br>
+        </div>
+        <div class="inputBox" radioGroup>
+          <p><strong>Está em cima do teto de um veículo em movimento a mais de 100km/h é considerado:</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">PG.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Anti Amor a Vida</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">VDM</label>
+        </div>
+        <div class="inputBox" radioGroup>
+          <p><strong>Quantos policiais e bandidos são necessário para realizar uma ação de sequestro?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">4</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">6</label>
+          <br>
+          <input type="radio" name="question" value="3" required>
+          <label for="feminino">8</label>
+          <br>
+          <input type="radio" name="question" value="3" required>
+          <label for="feminino">10</label>
+        </div>
+        <div class="inputBox" radioGroup>
+          <p><strong>Você se considera uma pessoa imparcial ?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Não</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Sim</label>
+        </div>
+        <br>
+        <div class="inputBox" radioGroup>
+          <p><strong>Você esta perseguindo 2 bandidos, e esses dois bandidos fazem "ANT RP" com você, e você não estava
+              gravando, oque você faria?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Faria ANT RP contra eles também.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Subiria suporte e iria falar pros staff's oque aconteceu.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Apenas ignoraria e continuava seu RP.</label>
+        </div>
+        <br>
+        <div class="inputBox" radioGroup>
+          <p><strong>Você esta perseguindo 2 bandidos, e esses dois bandidos fazem "ANT RP" com você, e você não estava
+              gravando, oque você faria?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Faria ANT RP contra eles também.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Subiria suporte e iria falar pros staff's oque aconteceu.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Apenas ignoraria e continuava seu RP.</label>
+        </div>
+        <br>
+        <div class="inputBox" radioGroup>
+          <p><strong>Você está fazendo RP e alguém chega quebrando alguma regra, e você está gravando, porém o mesmo que
+              quebrou as regras de RP é iniciante. Qual seria sua atitude a ser tomada </strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Faria uma denúncia?</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Conversava e diria para ele ler as regras?</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Ignorava.</label>
+        </div>
+        <a id="next" class="btn">Próxima</a>
+      </fieldset> 
+      <fieldset class="page">
+        <div class="inputBox">
+          <textarea name="quest1" id="quest1" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="quest1" class="labelInput"><strong>Qual sua intenção após conseguir entrar na
+              equipe?</strong></label>
+        </div>
+        <div class="inputBox">
+          <textarea name="quest1" id="quest1" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="quest1" class="labelInput"><strong>Por Que deveríamos te aceitar na Staff?</strong></label>
+        </div>
+        <div class="inputBox">
+          <textarea name="quest1" id="quest1" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="quest1" class="labelInput"><strong>Cite 5 defeitos e 5 qualidades suas:
+            </strong></label>
+        </div>
+        <div class="inputBox">
+          <textarea name="quest1" id="quest1" class="inputUser" rows="3" cols="20" required></textarea>
+          <label for="quest1" class="labelInput"><strong>Quais são suas habilidades dentro do mta, e o que te fez querer
+              fazer parte da equipe?
+            </strong></label>
+        </div>
+        <div class="inputBox" radioGroup>
+          <p><strong>Se um player faz anti rp na sua frente qual seria sua atitude?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Puni-lo imediatamente.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Esperar acabar ação que ele está, e conversar com ele..</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Simplesmente ignoraria.</label>
+        </div>
+        <br>
+        <div class="inputBox" radioGroup>
+          <p><strong>Seu superior está quebrando regras, qual seria sua atitude?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Gravaria e passaria para alguém superior a ele.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Me divertiria e me juntava a ele.</label>
+        </div>
+        <br>
+        <div class="inputBox" radioGroup>
+          <p><strong>Se um player ir no suporte, falando que você aplicou uma punição injusta, qual seria sua
+              justificativa?</strong></p>
+          <input type="radio" name="question" value="1" required>
+          <label for="error">Mostraria o vídeo que está na planilha, mostrando onde ele errou.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Ignoraria, pois faço parte da equipe e ele não pode me contrariar.</label>
+          <br>
+          <input type="radio" name="question" value="2" required>
+          <label for="feminino">Retiraria a punição.</label>
+        </div>
+        <button type="submit" id="submit">Enviar</button>
+      </fieldset>
+    </form>
+
+  </div>
+  
+</body>
+
+</html>

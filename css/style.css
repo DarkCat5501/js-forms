@@ -37,7 +37,7 @@ form > fieldset {
 	border-bottom: 2px solid white;
 	width:auto;
 	color: white;
-	border-radius:1px;
+	border-radius:5px;
 	padding: 0.5rem;
 }
 
@@ -45,9 +45,11 @@ form > fieldset {
 	color: gray;
 }
 
+
 .input:hover, .input:focus {
 	outline:none;
 }
+
 .input:focus {
 	border-inline: 2px solid white;
 }
@@ -74,6 +76,7 @@ form > fieldset {
 	padding-inline:1rem;
 	padding-block: 0.2rem;
 	border-radius: 0.5rem;
+	background-color: transparent;
 }
 
 .btn-list {
@@ -81,6 +84,55 @@ form > fieldset {
 	flex-direction: row;
 }
 
+
+
+
+.combo {
+	position: relative;
+}
+.combo-search{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding:0.5rem;
+	gap: 0.5rem;
+}
+
+.combo-search input{
+	display: block;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	width:100%;
+	color: white;
+	border-radius:5px;
+	padding: 0.5rem;
+}
+
+.combo-search input:focus{
+	outline: none;
+	border-left: 2px solid white;
+}
+
+.combo-menu {
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: 2px solid white;
+	position: absolute;
+	max-height: 10rem;
+	overflow: scroll;
+	background-color: black;
+	padding-block: 1rem;
+}
+
 .hide {
-	display: none;
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.error{
+	color: red;
 }

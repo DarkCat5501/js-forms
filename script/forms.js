@@ -27,8 +27,8 @@ const toElement = (data, root) => {
     root instanceof HTMLElement
       ? root
       : typeof root === "string"
-      ? document.createElement(root)
-      : null;
+        ? document.createElement(root)
+        : null;
   return renderElement(data, _root ?? document.createElement("div"));
 };
 
@@ -51,7 +51,7 @@ class FormField {
       : toElement(`Invalid form type :(${props.type})`, "p").root;
     page._root.appendChild(this._root);
   }
-  render() {}
+  render() { }
   get props() {
     return this.props;
   }
@@ -224,8 +224,8 @@ class ComboField extends FormField {
       children: { search, search_button },
     } = toElement(
       `
-			<input id="search" type="text"/>
-			<span id="search_button">search</span>`,
+			<input id="search" type="text" placeholder="${props.placeholder ?? ""}"/>
+			<span id="search_button">${props.search}</span>`,
       "div",
     );
     setAttributes(searchbox, { class: "combo-search" });

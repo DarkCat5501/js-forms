@@ -202,7 +202,6 @@ class MultiSelectField extends FormField {
     console.log("Validation for", event, opt_index);
   }
 }
-
 class ComboField extends FormField {
   /** @type {HTMLInputElement[]} */
   _option_fields = [];
@@ -226,7 +225,7 @@ class ComboField extends FormField {
     } = toElement(
       `
 			<input id="search" type="text"/>
-			<span id="search_button">p</span>`,
+			<span id="search_button">search</span>`,
       "div",
     );
     setAttributes(searchbox, { class: "combo-search" });
@@ -535,19 +534,16 @@ class Form {
 
   gotoNextPage() {
     this._currentPageIndex++;
-
     if (this._currentPageIndex >= this._pages.length) {
       this.handleSubmit();
     } else {
       this.update();
     }
-
     this._currentPageIndex = clamp(
       this._currentPageIndex,
       0,
       this._pages.length - 1,
     );
-    console.log(this._currentPageIndex);
   }
 
   gotoPreviousPage() {
